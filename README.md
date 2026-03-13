@@ -1,2 +1,9 @@
-# plant-stress-detection-ml
-Machine learning framework for detecting plant stress from electrophysiological signals using signal processing, feature extraction, and ensemble classifiers.
+# Plant Stress Detection from Electrophysiological Signals
+
+This project presents a machine learning framework for detecting plant stress using electrophysiological signals. Plants generate bioelectrical signals that reflect physiological responses to environmental conditions, and these signals can be analyzed computationally to infer stress states. The goal of this work is to decode information contained in plant electrical activity and classify whether a plant is under stress or in a normal condition using signal processing and machine learning techniques.
+
+The proposed pipeline includes several stages. First, raw electrophysiological recordings are preprocessed to remove noise and power-line interference using signal filtering techniques. The signals are then segmented into temporal windows and analyzed using multi-domain feature extraction methods. The extracted features include statistical descriptors, nonlinear characteristics, spectral components, and wavelet-based representations that capture the temporal and frequency behavior of the signals. Feature normalization and selection are applied to improve the quality of the input space for the classifiers.
+
+Several machine learning models are evaluated within the same experimental framework, including Linear Support Vector Classifier, Gaussian Naive Bayes, Multi-Layer Perceptron, Extra Trees, Random Forest, and HistGradientBoosting classifiers. The models are trained and evaluated on electrophysiological recordings collected from plants exposed to different stress conditions such as drought, nutrient deficiency, and spider mite infestation. Experimental results show that ensemble-based approaches provide strong predictive performance, with HistGradientBoosting achieving the best results in terms of macro F1-score.
+
+This repository contains the implementation of the signal preprocessing pipeline, feature extraction procedures, machine learning models, and experimental evaluation used in the study. The project was developed collaboratively as part of a research effort exploring the intersection of plant electrophysiology, signal processing, and machine learning.
